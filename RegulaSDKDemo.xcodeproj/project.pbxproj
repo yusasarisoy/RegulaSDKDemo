@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30328973F705AF2B30CEE40C /* Pods_RegulaSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3BAB93660729FAD1B206A9 /* Pods_RegulaSDKDemo.framework */; };
 		442702462762627D003E45DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442702452762627D003E45DC /* AppDelegate.swift */; };
 		442702482762627D003E45DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442702472762627D003E45DC /* SceneDelegate.swift */; };
 		4427024A2762627D003E45DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442702492762627D003E45DC /* ViewController.swift */; };
-		4427024D2762627D003E45DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4427024B2762627D003E45DC /* Main.storyboard */; };
 		4427024F27626280003E45DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4427024E27626280003E45DC /* Assets.xcassets */; };
 		4427025227626280003E45DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4427025027626280003E45DC /* LaunchScreen.storyboard */; };
+		4427025A276262F7003E45DC /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 44270259276262F7003E45DC /* regula.license */; };
+		448BFAC72763B2DB009F62EB /* ViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */; };
+		448BFAC92763B405009F62EB /* ViewController+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448BFAC82763B404009F62EB /* ViewController+Logic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,15 @@
 		442702452762627D003E45DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442702472762627D003E45DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		442702492762627D003E45DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4427024C2762627D003E45DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4427024E27626280003E45DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4427025127626280003E45DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4427025327626280003E45DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44270259276262F7003E45DC /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = regula.license; sourceTree = "<group>"; };
+		448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Constraints.swift"; sourceTree = "<group>"; };
+		448BFAC82763B404009F62EB /* ViewController+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Logic.swift"; sourceTree = "<group>"; };
+		4A3BAB93660729FAD1B206A9 /* Pods_RegulaSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegulaSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99863A029F356BE628724425 /* Pods-RegulaSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegulaSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F02DE4C8D19BEEFD7ADF19DA /* Pods-RegulaSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegulaSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30328973F705AF2B30CEE40C /* Pods_RegulaSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4411CA9D27636EF600C3B7E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4411CA9E27636F4900C3B7E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4427024E27626280003E45DC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4411CA9F27636F5000C3B7E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44270259276262F7003E45DC /* regula.license */,
+				4427025327626280003E45DC /* Info.plist */,
+				4427025027626280003E45DC /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4411CAA027636FA200C3B7E8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				442702492762627D003E45DC /* ViewController.swift */,
+				448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */,
+				448BFAC82763B404009F62EB /* ViewController+Logic.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4411CAA127636FE800C3B7E8 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				442702452762627D003E45DC /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		4411CAA227636FF600C3B7E8 /* Scene Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				442702472762627D003E45DC /* SceneDelegate.swift */,
+			);
+			path = "Scene Delegate";
+			sourceTree = "<group>";
+		};
 		442702392762627D003E45DC = {
 			isa = PBXGroup;
 			children = (
 				442702442762627D003E45DC /* RegulaSDKDemo */,
 				442702432762627D003E45DC /* Products */,
+				69D08CB29A34532C58241F2B /* Pods */,
+				DC6AD5F95A18248582D9D922 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +118,31 @@
 		442702442762627D003E45DC /* RegulaSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				442702452762627D003E45DC /* AppDelegate.swift */,
-				442702472762627D003E45DC /* SceneDelegate.swift */,
-				442702492762627D003E45DC /* ViewController.swift */,
-				4427024B2762627D003E45DC /* Main.storyboard */,
-				4427024E27626280003E45DC /* Assets.xcassets */,
-				4427025027626280003E45DC /* LaunchScreen.storyboard */,
-				4427025327626280003E45DC /* Info.plist */,
+				4411CAA127636FE800C3B7E8 /* Application Delegate */,
+				4411CA9E27636F4900C3B7E8 /* Resources */,
+				4411CAA227636FF600C3B7E8 /* Scene Delegate */,
+				4411CA9F27636F5000C3B7E8 /* Supporting Files */,
+				4411CAA027636FA200C3B7E8 /* View Controllers */,
+				4411CA9D27636EF600C3B7E8 /* Views */,
 			);
 			path = RegulaSDKDemo;
+			sourceTree = "<group>";
+		};
+		69D08CB29A34532C58241F2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99863A029F356BE628724425 /* Pods-RegulaSDKDemo.debug.xcconfig */,
+				F02DE4C8D19BEEFD7ADF19DA /* Pods-RegulaSDKDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC6AD5F95A18248582D9D922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3BAB93660729FAD1B206A9 /* Pods_RegulaSDKDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4427025627626280003E45DC /* Build configuration list for PBXNativeTarget "RegulaSDKDemo" */;
 			buildPhases = (
+				44F2952A276369F7000C5B23 /* Run SwiftLint */,
+				E4519CD322E69CFAC00E988C /* [CP] Check Pods Manifest.lock */,
 				4427023E2762627D003E45DC /* Sources */,
 				4427023F2762627D003E45DC /* Frameworks */,
 				442702402762627D003E45DC /* Resources */,
+				4AFDDF68214F915883A5C299 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +208,81 @@
 			files = (
 				4427025227626280003E45DC /* LaunchScreen.storyboard in Resources */,
 				4427024F27626280003E45DC /* Assets.xcassets in Resources */,
-				4427024D2762627D003E45DC /* Main.storyboard in Resources */,
+				4427025A276262F7003E45DC /* regula.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44F2952A276369F7000C5B23 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		4AFDDF68214F915883A5C299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4519CD322E69CFAC00E988C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RegulaSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4427023E2762627D003E45DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448BFAC92763B405009F62EB /* ViewController+Logic.swift in Sources */,
 				4427024A2762627D003E45DC /* ViewController.swift in Sources */,
 				442702462762627D003E45DC /* AppDelegate.swift in Sources */,
+				448BFAC72763B2DB009F62EB /* ViewController+Constraints.swift in Sources */,
 				442702482762627D003E45DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +290,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4427024B2762627D003E45DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4427024C2762627D003E45DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4427025027626280003E45DC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,17 +419,24 @@
 		};
 		4427025727626280003E45DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99863A029F356BE628724425 /* Pods-RegulaSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JW7J4HUPGZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RegulaSDKDemo/Info.plist;
+				INFOPLIST_FILE = "RegulaSDKDemo/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC tag to read NDEF messages";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Regula 1120 Device";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To obtain images from the camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To obtain images from the gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,25 +446,33 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.yusasarisoy.RegulaSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4427025827626280003E45DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F02DE4C8D19BEEFD7ADF19DA /* Pods-RegulaSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JW7J4HUPGZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RegulaSDKDemo/Info.plist;
+				INFOPLIST_FILE = "RegulaSDKDemo/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC tag to read NDEF messages";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Regula 1120 Device";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To obtain images from the camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To obtain images from the gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,9 +482,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.yusasarisoy.RegulaSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,28 @@
+PODS:
+  - DocumentReader (5.8.2215):
+    - RegulaCommon (= 5.8.59)
+  - DocumentReaderFullRFID (5.8.5164)
+  - RegulaCommon (5.8.59)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - DocumentReader
+  - DocumentReaderFullRFID
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - DocumentReader
+    - DocumentReaderFullRFID
+    - RegulaCommon
+    - SnapKit
+
+SPEC CHECKSUMS:
+  DocumentReader: 344922de570f6080160518352635dbb514e66958
+  DocumentReaderFullRFID: 1029350f2acd9adebf72033e4d065f865107878d
+  RegulaCommon: 601c50267470f36652f94174e87d79b8a0608af2
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 1f867d5f9d670d01105ae3ec0f7d06431bca953c
+
+COCOAPODS: 1.11.2

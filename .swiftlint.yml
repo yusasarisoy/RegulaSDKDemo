@@ -1,0 +1,12 @@
+disabled_rules:
+  - identifier_name
+
+opt_in_rules:
+ - empty_count
+
+excluded:
+ - Pods
+
+line_length:
+ - warning: 120
+ - error: 150
