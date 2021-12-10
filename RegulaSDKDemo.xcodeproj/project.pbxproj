@@ -14,6 +14,7 @@
 		4427024F27626280003E45DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4427024E27626280003E45DC /* Assets.xcassets */; };
 		4427025227626280003E45DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4427025027626280003E45DC /* LaunchScreen.storyboard */; };
 		4427025A276262F7003E45DC /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 44270259276262F7003E45DC /* regula.license */; };
+		44831F192763D8ED00BABF53 /* ViewControllers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44831F182763D8ED00BABF53 /* ViewControllers+Extensions.swift */; };
 		448BFAC72763B2DB009F62EB /* ViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */; };
 		448BFAC92763B405009F62EB /* ViewController+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448BFAC82763B404009F62EB /* ViewController+Logic.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		4427025127626280003E45DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4427025327626280003E45DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44270259276262F7003E45DC /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = regula.license; sourceTree = "<group>"; };
+		44831F182763D8ED00BABF53 /* ViewControllers+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+Extensions.swift"; sourceTree = "<group>"; };
 		448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Constraints.swift"; sourceTree = "<group>"; };
 		448BFAC82763B404009F62EB /* ViewController+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Logic.swift"; sourceTree = "<group>"; };
 		4A3BAB93660729FAD1B206A9 /* Pods_RegulaSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegulaSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 				442702492762627D003E45DC /* ViewController.swift */,
 				448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */,
 				448BFAC82763B404009F62EB /* ViewController+Logic.swift */,
+				44831F182763D8ED00BABF53 /* ViewControllers+Extensions.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				448BFAC92763B405009F62EB /* ViewController+Logic.swift in Sources */,
 				4427024A2762627D003E45DC /* ViewController.swift in Sources */,
+				44831F192763D8ED00BABF53 /* ViewControllers+Extensions.swift in Sources */,
 				442702462762627D003E45DC /* AppDelegate.swift in Sources */,
 				448BFAC72763B2DB009F62EB /* ViewController+Constraints.swift in Sources */,
 				442702482762627D003E45DC /* SceneDelegate.swift in Sources */,
@@ -426,7 +430,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JW7J4HUPGZ;
+				DEVELOPMENT_TEAM = 9DLL4KWB96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RegulaSDKDemo/Supporting Files/Info.plist";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC tag to read NDEF messages";
@@ -435,7 +439,6 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To obtain images from the gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -462,7 +465,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JW7J4HUPGZ;
+				DEVELOPMENT_TEAM = 9DLL4KWB96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RegulaSDKDemo/Supporting Files/Info.plist";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC tag to read NDEF messages";
@@ -471,7 +474,6 @@
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To obtain images from the gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
