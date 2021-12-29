@@ -15,11 +15,15 @@ extension ViewController {
   /// Allows to download the database and then scan documents.
   func initializationReader() {
     // getting license
-    guard let dataPath = Bundle.main.path(forResource: "regula.license", ofType: nil) else { return }
-    guard let licenseData = try? Data(contentsOf: URL(fileURLWithPath: dataPath)) else { return }
+    guard
+      let dataPath = Bundle.main.path(forResource: Constants.license, ofType: nil),
+      let licenseData = try? Data(contentsOf: URL(fileURLWithPath: dataPath))
+    else {
+      return
+    }
 
     DispatchQueue.global().async {
-      DocReader.shared.prepareDatabase(databaseID: "Full",
+      DocReader.shared.prepareDatabase(databaseID: Constants.databaseID,
                                        progressHandler: { (progress) in
         let progressValue = String(format: "%.1f",
                                    progress.fractionCompleted * 100)
@@ -123,7 +127,8 @@ extension ViewController {
   private func showDocumentedImage(with result: DocumentReaderResults) {
     labelDocumentedImage.isHidden = false
     imageViewDocument.isHidden = false
-    imageViewDocument.image = result.getGraphicFieldImageByType(fieldType: .gf_DocumentImage, source: .rawImage)
+    imageViewDocument.image = result.getGraphicFieldImageByType(fieldType: .gf_DocumentImage,
+                                                                source: .rawImage)
   }
 
   /// Provides to show information of the documented image on a **UIAlertController**.

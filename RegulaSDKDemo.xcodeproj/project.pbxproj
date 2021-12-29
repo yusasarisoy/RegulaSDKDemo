@@ -14,9 +14,8 @@
 		4427024F27626280003E45DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4427024E27626280003E45DC /* Assets.xcassets */; };
 		4427025227626280003E45DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4427025027626280003E45DC /* LaunchScreen.storyboard */; };
 		4427025A276262F7003E45DC /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 44270259276262F7003E45DC /* regula.license */; };
-		44831F192763D8ED00BABF53 /* ViewControllers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44831F182763D8ED00BABF53 /* ViewControllers+Extensions.swift */; };
-		448BFAC72763B2DB009F62EB /* ViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */; };
 		448BFAC92763B405009F62EB /* ViewController+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448BFAC82763B404009F62EB /* ViewController+Logic.swift */; };
+		44FD1DFB277CFB8900339DE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD1DFA277CFB8900339DE7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +27,8 @@
 		4427025127626280003E45DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4427025327626280003E45DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44270259276262F7003E45DC /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = regula.license; sourceTree = "<group>"; };
-		44831F182763D8ED00BABF53 /* ViewControllers+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllers+Extensions.swift"; sourceTree = "<group>"; };
-		448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Constraints.swift"; sourceTree = "<group>"; };
 		448BFAC82763B404009F62EB /* ViewController+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Logic.swift"; sourceTree = "<group>"; };
+		44FD1DFA277CFB8900339DE7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4A3BAB93660729FAD1B206A9 /* Pods_RegulaSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegulaSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99863A029F356BE628724425 /* Pods-RegulaSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegulaSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F02DE4C8D19BEEFD7ADF19DA /* Pods-RegulaSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegulaSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-RegulaSDKDemo/Pods-RegulaSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,56 +46,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4411CA9D27636EF600C3B7E8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4411CA9E27636F4900C3B7E8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4427024E27626280003E45DC /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4411CA9F27636F5000C3B7E8 /* Supporting Files */ = {
+		4411CA9F27636F5000C3B7E8 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				44270259276262F7003E45DC /* regula.license */,
 				4427025327626280003E45DC /* Info.plist */,
+				442702452762627D003E45DC /* AppDelegate.swift */,
+				44FD1DFA277CFB8900339DE7 /* Constants.swift */,
+				442702472762627D003E45DC /* SceneDelegate.swift */,
+				4427024E27626280003E45DC /* Assets.xcassets */,
 				4427025027626280003E45DC /* LaunchScreen.storyboard */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		4411CAA027636FA200C3B7E8 /* View Controllers */ = {
+		4411CAA027636FA200C3B7E8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				442702492762627D003E45DC /* ViewController.swift */,
-				448BFAC62763B2DB009F62EB /* ViewController+Constraints.swift */,
 				448BFAC82763B404009F62EB /* ViewController+Logic.swift */,
-				44831F182763D8ED00BABF53 /* ViewControllers+Extensions.swift */,
 			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		4411CAA127636FE800C3B7E8 /* Application Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				442702452762627D003E45DC /* AppDelegate.swift */,
-			);
-			path = "Application Delegate";
-			sourceTree = "<group>";
-		};
-		4411CAA227636FF600C3B7E8 /* Scene Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				442702472762627D003E45DC /* SceneDelegate.swift */,
-			);
-			path = "Scene Delegate";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		442702392762627D003E45DC = {
@@ -121,12 +90,8 @@
 		442702442762627D003E45DC /* RegulaSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4411CAA127636FE800C3B7E8 /* Application Delegate */,
-				4411CA9E27636F4900C3B7E8 /* Resources */,
-				4411CAA227636FF600C3B7E8 /* Scene Delegate */,
-				4411CA9F27636F5000C3B7E8 /* Supporting Files */,
-				4411CAA027636FA200C3B7E8 /* View Controllers */,
-				4411CA9D27636EF600C3B7E8 /* Views */,
+				4411CAA027636FA200C3B7E8 /* Controllers */,
+				4411CA9F27636F5000C3B7E8 /* SupportingFiles */,
 			);
 			path = RegulaSDKDemo;
 			sourceTree = "<group>";
@@ -155,8 +120,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4427025627626280003E45DC /* Build configuration list for PBXNativeTarget "RegulaSDKDemo" */;
 			buildPhases = (
-				44F2952A276369F7000C5B23 /* Run SwiftLint */,
 				E4519CD322E69CFAC00E988C /* [CP] Check Pods Manifest.lock */,
+				44F2952A276369F7000C5B23 /* Run SwiftLint */,
 				4427023E2762627D003E45DC /* Sources */,
 				4427023F2762627D003E45DC /* Frameworks */,
 				442702402762627D003E45DC /* Resources */,
@@ -178,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					442702412762627D003E45DC = {
@@ -284,9 +249,8 @@
 			files = (
 				448BFAC92763B405009F62EB /* ViewController+Logic.swift in Sources */,
 				4427024A2762627D003E45DC /* ViewController.swift in Sources */,
-				44831F192763D8ED00BABF53 /* ViewControllers+Extensions.swift in Sources */,
 				442702462762627D003E45DC /* AppDelegate.swift in Sources */,
-				448BFAC72763B2DB009F62EB /* ViewController+Constraints.swift in Sources */,
+				44FD1DFB277CFB8900339DE7 /* Constants.swift in Sources */,
 				442702482762627D003E45DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +396,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DLL4KWB96;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RegulaSDKDemo/Supporting Files/Info.plist";
+				INFOPLIST_FILE = RegulaSDKDemo/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC tag to read NDEF messages";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Regula 1120 Device";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To obtain images from the camera";
@@ -467,7 +431,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9DLL4KWB96;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "RegulaSDKDemo/Supporting Files/Info.plist";
+				INFOPLIST_FILE = RegulaSDKDemo/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC tag to read NDEF messages";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Regula 1120 Device";
 				INFOPLIST_KEY_NSCameraUsageDescription = "To obtain images from the camera";
